@@ -88,7 +88,7 @@ class ServerConfig(object):
     CAPTCHA_SITE_KEY = "6LcHM4gpAAAAACJz6ZVB5tgv9SkRSKbrTFOSq48g"
     CAPTCHA_INSERT_TAGS = False
 
-    SECRET_KEY: str = empty_str_cast(config_ini["server"]["6LcHM4gpAAAAAJHD2EJGKyLsoyqMxT4Np1pzQqMd"]) \
+    SECRET_KEY: str = empty_str_cast(config_ini["server"]["SECRET_KEY"]) \
         or gen_secret_key()
 
     DATABASE_URL: str = empty_str_cast(config_ini["server"]["DATABASE_URL"])
