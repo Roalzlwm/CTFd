@@ -82,6 +82,11 @@ config_ini.read(path)
 
 # fmt: off
 class ServerConfig(object):
+    CAPTCHA_ENABLED = True
+    CAPTCHA_PROVIDER = 'reCaptcha'  # 리캡챠를 사용하는 경우
+    CAPTCHA_SECRET = '6LcHM4gpAAAAAJHD2EJGKyLsoyqMxT4Np1pzQqMd'
+    CAPTCHA_SITE_KEY = '6LcHM4gpAAAAACJz6ZVB5tgv9SkRSKbrTFOSq48g'
+
     SECRET_KEY: str = empty_str_cast(config_ini["server"]["SECRET_KEY"]) \
         or gen_secret_key()
 
