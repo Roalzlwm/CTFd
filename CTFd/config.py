@@ -86,6 +86,7 @@ class ServerConfig(object):
     CAPTCHA_PROVIDER = 'reCaptcha'
     CAPTCHA_SECRET = '6LcHM4gpAAAAAJHD2EJGKyLsoyqMxT4Np1pzQqMd'
     CAPTCHA_SITE_KEY = "6LcHM4gpAAAAACJz6ZVB5tgv9SkRSKbrTFOSq48g"
+    CAPTCHA_INSERT_TAGS = False
 
     SECRET_KEY: str = empty_str_cast(config_ini["server"]["6LcHM4gpAAAAAJHD2EJGKyLsoyqMxT4Np1pzQqMd"]) \
         or gen_secret_key()
