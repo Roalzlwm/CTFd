@@ -50,6 +50,8 @@
 
 				{{ render_extra_fields(form.extra) }}
 
+				<div class="g-recaptcha" data-sitekey="{{ CAPTCHA_SITE_KEY }}"></div>
+
 				<div class="row pt-3">
 					<div class="col-md-12">
 						{{ form.submit(class="btn btn-md btn-primary btn-outlined float-right") }}
